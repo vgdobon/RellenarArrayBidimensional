@@ -10,7 +10,7 @@ public class ArrayBidimensional {
     public void rellenar(){
         for (int i = 0; i < arrayBidimensional.length; i++) {
             for (int j = 0; j < arrayBidimensional[i].length; j++) {
-                arrayBidimensional[i][j]= new Random().nextFloat();
+                arrayBidimensional[i][j]= new Random().nextFloat()*50;
             }
         }
     }
@@ -18,7 +18,7 @@ public class ArrayBidimensional {
     public void draw(){
         for (int i = 0; i < arrayBidimensional.length; i++) {
             for (int j = 0; j < arrayBidimensional[i].length; j++) {
-                System.out.print(arrayBidimensional[i][j]);
+                System.out.print(arrayBidimensional[i][j]+" ");
             }
             System.out.println();
         }
